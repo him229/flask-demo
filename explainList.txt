@@ -9,6 +9,7 @@
 # flask (and directory structure)
 # jinja templates
 # api 
+# configobj (because we need to explain api keys and what not)
 # twilio 
 # send someone a message (with twilio)
 # client/wrappper
