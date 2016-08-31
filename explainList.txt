@@ -6,8 +6,11 @@
 # download python (windows plebs)
 # explain what a server is
 # http request types
-# flask (and directory structure)
-# jinja templates
+# flask
+# - it is a server framework
+# - functions for rendering templates, redirecting
+# - file structure (knows where templates are)
+# jinja templates (flask uses this).
 # api 
 # configobj (because we need to explain api keys and what not)
 # twilio 
