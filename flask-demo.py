@@ -20,7 +20,7 @@ def home(name=None):
 @app.route('/message', methods=['GET','POST'])
 def message():
     if request.method == 'GET':
-        return render_template('message.html', success=None)
+        return render_template('message.html')
     else:
         number = request.form['phoneNumber']
         message = request.form['message']
@@ -30,12 +30,12 @@ def message():
         message = client.messages.create(body=message,
             to="+1" + number,    # Replace with your phone number
             from_= TWILIO_NUMBER) # Replace with your Twilio number        
-        return render_template('message.html', success="You sent a bloody message")
+        return render_template('message.html', success="You sent a bloody message.")
 
 @app.route('/message/api', methods=['GET','POST'])
 def message_api():
     if request.method == 'GET':
-        return render_template('message.html', success=None)
+        return render_template('message.html')
     else:
         number = request.form['phoneNumber']
         message = request.form['message']
@@ -45,7 +45,7 @@ def message_api():
         r = requests.post('https://api.twilio.com/2010-04-01/Accounts/' + TWILIO_SID + '/Messages', 
             data = load, auth=HTTPBasicAuth(TWILIO_SID,TWILIO_TOKEN))
         if r.status_code == 201:
-            return render_template('message.html', success="You sent a bloody message")
+            return render_template('message.html', success="You sent a bloody message using the REST API")
         else:
             return "Failed"
 

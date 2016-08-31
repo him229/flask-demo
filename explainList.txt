@@ -1,7 +1,4 @@
-# Master editor
-
-# flask app
-#
+# Explain points
 
 # download python (windows plebs)
 # explain what a server is
@@ -18,5 +15,4 @@
 # client/wrappper
 # tunnel
 # ngrok (ath the end so people can view)
-# 
-#
+# Github
