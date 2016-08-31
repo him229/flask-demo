@@ -1,0 +1,18 @@
+# Master editor
+
+# flask app
+#
+
+# download python (windows plebs)
+# explain what a server is
+# http request types
+# flask (and directory structure)
+# jinja templates
+# api 
+# twilio 
+# send someone a message (with twilio)
+# client/wrappper
+# tunnel
+# ngrok (ath the end so people can view)
+# 
+#
